@@ -2,61 +2,108 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mental Health Matters | World Mental Health Day</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#f5f8f8;color:#203033;line-height:1.55}
-header{background:#0f6b68;color:white;padding:34px 22px}
-main{max-width:760px;margin:auto;padding:18px}
-.card{background:white;border-radius:16px;padding:20px;margin:14px 0;box-shadow:0 2px 10px #00000012}
-h1{margin:0 0 8px;font-size:30px} h2{color:#0f6b68}
-.alert{border-left:5px solid #b3261e;background:#fff4f3;padding:15px;border-radius:8px}
-a{color:#0f6b68;font-weight:bold}
-ul{padding-left:22px}.small{font-size:13px;color:#5d686a}
+:root {
+  color-scheme: light dark;
+  --navy:#123b63;
+  --blue:#1f5f8f;
+  --teal:#2d8c88;
+  --green:#5b9b63;
+  --ink:light-dark(#17324d,#eef5f8);
+  --muted:light-dark(#53697a,#b9c8d1);
+  --surface:light-dark(#ffffff,#14222d);
+  --surface2:light-dark(#f2f7fa,#1a2d3a);
+  --border:light-dark(#d9e4ea,#304653);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:light-dark(#eaf2f6,#0d1820);color:var(--ink);line-height:1.6}
+#app{min-height:100vh;background:light-dark(#eaf2f6,#0d1820)}
+header{background:linear-gradient(135deg,var(--navy),#1d668e);color:white;padding:56px 22px 42px}
+.hero{max-width:1080px;margin:auto}
+.badge{display:inline-block;padding:7px 13px;border:1px solid rgba(255,255,255,.3);border-radius:999px;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(2.2rem,6vw,4.4rem);line-height:1.05;margin:18px 0 12px}
+.hero p{max-width:720px;font-size:1.08rem;color:#e3f1f7;margin:0}
+nav{max-width:1080px;margin:18px auto 0;display:flex;gap:10px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;border:1px solid rgba(255,255,255,.3);padding:8px 13px;border-radius:999px;font-size:.9rem}
+main{max-width:1080px;margin:auto;padding:30px 18px 70px}
+section{margin:28px 0;padding:28px;background:var(--surface);border:1px solid var(--border);border-radius:22px;box-shadow:0 8px 28px rgba(18,59,99,.07)}
+h2{margin:0 0 14px;color:var(--navy);font-size:clamp(1.45rem,3vw,2.15rem)}
+@media (prefers-color-scheme:dark){h2{color:#b8dff2}}
+h3{color:var(--blue);margin-bottom:6px}
+ul{padding-left:1.2rem}
+li{margin:.45rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.card{padding:20px;background:var(--surface2);border:1px solid var(--border);border-radius:16px}
+.crisis{border-left:5px solid #d66b61}
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.contact{padding:15px;background:var(--surface2);border-radius:14px}
+.schedule{background:linear-gradient(180deg,light-dark(#f7fbfd,#142630),var(--surface))}
+.schedule-intro{color:var(--muted);margin-top:-4px}
+.schedule img{display:block;width:100%;height:auto;border-radius:14px;border:1px solid var(--border);margin-top:18px}
+.caption{font-size:.88rem;color:var(--muted);margin:12px 2px 0}
+footer{text-align:center;color:var(--muted);padding:0 18px 38px;font-size:.9rem}
 </style>
 </head>
 <body>
-<header><main><h1>MENTAL HEALTH MATTERS</h1>
-<div>World Mental Health Day</div>
-<p>You don't have to go through difficult times alone. Seeking help is a sign of strength.</p></main></header>
+<div id="app">
+<header>
+  <div class="hero">
+    <span class="badge">World Mental Health Day</span>
+    <h1>Mental Health Matters</h1>
+    <p>You don't have to go through difficult times alone. Seeking help is a sign of strength.</p>
+    <nav>
+      <a href="#about">What is mental health?</a>
+      <a href="#support">Support & wellbeing</a>
+      <a href="#crisis">Immediate help</a>
+      <a href="#schedule">Programme & transport</a>
+    </nav>
+  </div>
+</header>
 <main>
-<section class="card"><h2>What is mental health?</h2>
-<p>Mental health is part of overall health. It affects how we think, feel, cope with stress, relate to others and function in everyday life. Everyone can experience periods of emotional difficulty, and mental health conditions can affect anyone.</p></section>
-
-<section class="card"><h2>Signs you may need support</h2>
-<ul><li>Persistent sadness, worry, fear or irritability</li><li>Loss of interest or enjoyment</li><li>Major changes in sleep or appetite</li><li>Difficulty concentrating or functioning at work/school</li><li>Withdrawing from family, friends or usual activities</li><li>Feeling hopeless, worthless or overwhelmed</li><li>Using alcohol or other substances to cope</li><li>Thoughts of death, self-harm or suicide</li></ul>
-<p>One or more signs do not automatically mean you have a mental illness. If symptoms persist, worsen, or interfere with daily life, talk to a health professional.</p></section>
-
-<section class="card"><h2>Simple ways to protect your wellbeing</h2>
-<ul><li>Talk to someone you trust.</li><li>Keep a regular sleep routine.</li><li>Stay physically active and spend time outdoors.</li><li>Eat regularly and stay hydrated.</li><li>Make time for supportive relationships and enjoyable activities.</li><li>Take breaks from stressful situations and screens.</li><li>Avoid relying on alcohol or drugs to manage distress.</li><li>Seek professional help early when you need it.</li></ul></section>
-
-<section class="card"><h2>How to support someone</h2>
-<ul><li>Listen without judging or rushing to give advice.</li><li>Ask how they are doing and take their concerns seriously.</li><li>Encourage them to speak with a doctor, counsellor or mental health professional.</li><li>Offer practical help and stay connected.</li></ul>
-<p>If you are concerned about suicide, ask directly whether they are thinking about suicide. Take any suicidal thoughts or plans seriously and seek urgent professional help.</p></section>
-
-<section class="card alert"><h2>In an immediate crisis</h2>
-<p>If someone is in immediate danger, has seriously harmed themselves, or may act on suicidal thoughts, do not leave them alone. Remove access to immediate means where it can be done safely and seek urgent help.</p>
-<p><strong>Medical emergency: 911</strong></p>
-<p><strong>Lifeline Fiji: 1543 — 24/7 confidential crisis support</strong></p>
-<p><strong>Empower Pacific: 5626 — counselling support</strong></p>
+<section id="about">
+  <h2>What is mental health?</h2>
+  <p>Mental health is part of overall health. It affects how we think, feel, cope with stress, relate to others and function in everyday life. Everyone can experience periods of emotional difficulty, and mental health conditions can affect anyone.</p>
 </section>
-
-<section class="card"><h2>Fiji mental health support</h2>
-<ul>
-<li><strong>Central/Eastern Community Mental Health Team:</strong> 3340 421 ext. 33149</li>
-<li><strong>Western Community Mental Health Team:</strong> 6660 411</li>
-<li><strong>Northern Community Mental Health Team:</strong> 8812 522</li>
-<li><strong>CWM/Suva Stress Management Ward:</strong> 3313 444</li>
-<li><strong>Lautoka Stress Management Ward:</strong> 6660 399</li>
-<li><strong>Labasa Stress Management Ward:</strong> 8811 444</li>
-<li><strong>St Giles Hospital:</strong> 3381 399</li>
-</ul>
-<p>You can also speak with your local doctor, nurse, health centre or hospital.</p></section>
-
-<section class="card"><h2>Remember</h2>
-<p><strong>Your mental health matters. You deserve support, care and respect.</strong></p>
-<p>Reaching out early can make a difference.</p></section>
-
-<section class="card small"><p><strong>Information note:</strong> This page provides general health information and does not replace assessment by a qualified health professional. Contact details should be checked periodically because services and numbers can change.</p>
-<p>Key Fiji service information checked against Health Fiji and Lifeline Fiji pages in September 2026.</p></section>
-</main></body></html>
+<section id="support">
+  <div class="grid">
+    <div class="card"><h3>Signs you may need support</h3><ul>
+      <li>Persistent sadness, worry, fear or irritability</li><li>Loss of interest or enjoyment</li><li>Major changes in sleep or appetite</li><li>Difficulty concentrating or functioning at work or school</li><li>Withdrawing from family, friends or usual activities</li><li>Feeling hopeless, worthless or overwhelmed</li><li>Using alcohol or other substances to cope</li><li>Thoughts of death, self-harm or suicide</li>
+    </ul></div>
+    <div class="card"><h3>Simple ways to protect your wellbeing</h3><ul>
+      <li>Talk to someone you trust.</li><li>Keep a regular sleep routine.</li><li>Stay physically active and spend time outdoors.</li><li>Eat regularly and stay hydrated.</li><li>Make time for supportive relationships and enjoyable activities.</li><li>Take breaks from stressful situations and screens.</li><li>Avoid relying on alcohol or drugs to manage distress.</li><li>Seek professional help early when you need it.</li>
+    </ul></div>
+  </div>
+</section>
+<section>
+  <h2>How to support someone</h2>
+  <ul><li>Listen without judging or rushing to give advice.</li><li>Ask how they are doing and take their concerns seriously.</li><li>Encourage them to speak with a doctor, counsellor or mental health professional.</li><li>Offer practical help and stay connected.</li></ul>
+</section>
+<section id="crisis" class="crisis">
+  <h2>In an immediate crisis</h2>
+  <p>If someone is in immediate danger, has seriously harmed themselves, or may act on suicidal thoughts, do not leave them alone. Remove access to immediate means where it can be done safely and seek urgent help.</p>
+  <div class="contacts">
+    <div class="contact"><strong>Medical emergency</strong><br>911</div>
+    <div class="contact"><strong>Lifeline Fiji</strong><br>1543 — 24/7 confidential crisis support</div>
+    <div class="contact"><strong>Empower Pacific</strong><br>5626 — counselling support</div>
+  </div>
+</section>
+<section>
+  <h2>Fiji mental health support</h2>
+  <div class="contacts">
+    <div class="contact">Central/Eastern Community Mental Health Team<br><strong>3340 421 ext. 33149</strong></div>
+    <div class="contact">Western Community Mental Health Team<br><strong>6660 411</strong></div>
+    <div class="contact">Northern Community Mental Health Team<br><strong>8812 522</strong></div>
+    <div class="contact">CWM/Suva Stress Management Ward<br><strong>3313 444</strong></div>
+    <div class="contact">Lautoka Stress Management Ward<br><strong>6660 399</strong></div>
+    <div class="contact">Labasa Stress Management Ward<br><strong>8811 444</strong></div>
+    <div class="contact">St Giles Hospital<br><strong>3381 399</strong></div>
+  </div>
+  <p>You can also speak with your local doctor, nurse, health centre or hospital.</p>
+</section>
+<section id="schedule" class="schedule">
+  <h2>Programme & Transport Schedule</h2>
+  <p class="schedule-intro">Programme transport arrangements for the Mental Health Matters activities, including dates, pick-up and drop-off locations, return times, and passengers.</p>
+  <img
